@@ -1,0 +1,78 @@
+{
+  "DatosReporte": [
+    {
+      "Usuario": {
+        "FechaIngreso": "2021-10-30T11:52:28.6496675-03:00",
+        "ListadoDeDelitos": [
+          0
+        ],
+        "DenunciasRegistradas": 2,
+        "NumeroTelefonico": 1566429774,
+        "Activo": true,
+        "Grupo": 0,
+        "Nombre": "nombreUsuario1",
+        "Apellido": "apellidoUsuario1",
+        "Dni": 39429766
+      },
+      "Fecha": "2021-10-30T11:52:28.6500854-03:00",
+      "Grupo": 3,
+      "Presente": 0
+    },
+    {
+      "Usuario": {
+        "FechaIngreso": "2021-10-30T11:52:28.6500828-03:00",
+        "ListadoDeDelitos": [
+          0,
+          2
+        ],
+        "DenunciasRegistradas": 1,
+        "NumeroTelefonico": 1566439685,
+        "Activo": true,
+        "Grupo": 1,
+        "Nombre": "nombreUsuario2",
+        "Apellido": "apellidoUsuario2",
+        "Dni": 39429765
+      },
+      "Fecha": "2021-10-30T11:52:28.6501322-03:00",
+      "Grupo": 3,
+      "Presente": 1
+    },
+    {
+      "Usuario": {
+        "FechaIngreso": "2021-10-30T11:52:28.6500836-03:00",
+        "ListadoDeDelitos": [
+          2
+        ],
+        "DenunciasRegistradas": 5,
+        "NumeroTelefonico": 1566439685,
+        "Activo": true,
+        "Grupo": 2,
+        "Nombre": "nombreUsuario3",
+        "Apellido": "apellidoUsuario3",
+        "Dni": 39429767
+      },
+      "Fecha": "2021-10-30T11:52:28.6501326-03:00",
+      "Grupo": 1,
+      "Presente": 2
+    },
+    {
+      "Usuario": {
+        "FechaIngreso": "2021-10-30T11:52:28.6500838-03:00",
+        "ListadoDeDelitos": [
+          0,
+          1
+        ],
+        "DenunciasRegistradas": 10,
+        "NumeroTelefonico": 1578423714,
+        "Activo": true,
+        "Grupo": 0,
+        "Nombre": "nombreUsuario4",
+        "Apellido": "apellidoUsuario4",
+        "Dni": 39429768
+      },
+      "Fecha": "2021-10-30T11:52:28.6501327-03:00",
+      "Grupo": 2,
+      "Presente": 3
+    }
+  ]
+}
