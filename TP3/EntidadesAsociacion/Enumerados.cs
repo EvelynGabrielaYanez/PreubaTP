@@ -35,7 +35,6 @@ namespace EntidadesAsociacion
             Administrador,
             Empleado
         }
-
         public enum ETipoExtension
         { 
             Txt,

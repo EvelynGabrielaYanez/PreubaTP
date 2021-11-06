@@ -35,7 +35,6 @@ namespace TP3.UsuarioABM
             this.label4 = new System.Windows.Forms.Label();
             this.lblDenunciasRegistradas = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtFechaIngreso = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDni = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@ namespace TP3.UsuarioABM
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblFechaDeIngreso
@@ -104,14 +104,6 @@ namespace TP3.UsuarioABM
             this.label8.TabIndex = 4;
             this.label8.Text = "Grupo:";
             // 
-            // txtFechaIngreso
-            // 
-            this.txtFechaIngreso.Enabled = false;
-            this.txtFechaIngreso.Location = new System.Drawing.Point(141, 26);
-            this.txtFechaIngreso.Name = "txtFechaIngreso";
-            this.txtFechaIngreso.Size = new System.Drawing.Size(126, 23);
-            this.txtFechaIngreso.TabIndex = 8;
-            // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(141, 64);
@@ -143,9 +135,9 @@ namespace TP3.UsuarioABM
             // cmbGrupo
             // 
             this.cmbGrupo.FormattingEnabled = true;
-            this.cmbGrupo.Location = new System.Drawing.Point(142, 178);
+            this.cmbGrupo.Location = new System.Drawing.Point(141, 178);
             this.cmbGrupo.Name = "cmbGrupo";
-            this.cmbGrupo.Size = new System.Drawing.Size(124, 23);
+            this.cmbGrupo.Size = new System.Drawing.Size(125, 23);
             this.cmbGrupo.TabIndex = 14;
             // 
             // chklstDelitosRegistrados
@@ -161,9 +153,9 @@ namespace TP3.UsuarioABM
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(290, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 15);
+            this.label1.Size = new System.Drawing.Size(105, 15);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Delitos Registrados:";
+            this.label1.Text = "Causas de ingreso:";
             // 
             // btnAgregar
             // 
@@ -196,16 +188,25 @@ namespace TP3.UsuarioABM
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(142, 216);
+            this.txtTelefono.Location = new System.Drawing.Point(141, 216);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(126, 23);
+            this.txtTelefono.Size = new System.Drawing.Size(127, 23);
             this.txtTelefono.TabIndex = 20;
+            // 
+            // dtpFechaIngreso
+            // 
+            this.dtpFechaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(141, 26);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(127, 23);
+            this.dtpFechaIngreso.TabIndex = 21;
             // 
             // FrmAltaUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 319);
+            this.Controls.Add(this.dtpFechaIngreso);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.btnCancelar);
@@ -217,7 +218,6 @@ namespace TP3.UsuarioABM
             this.Controls.Add(this.txtDni);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtFechaIngreso);
             this.Controls.Add(this.lblDenunciasRegistradas);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
@@ -240,7 +240,6 @@ namespace TP3.UsuarioABM
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblDenunciasRegistradas;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtFechaIngreso;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtDni;
@@ -252,5 +251,6 @@ namespace TP3.UsuarioABM
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
     }
 }

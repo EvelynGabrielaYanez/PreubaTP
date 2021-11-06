@@ -32,7 +32,8 @@ namespace TP3.UsuarioABM
             cmbGrupo.DataSource = Enum.GetValues(typeof(EGrupo));
 
             chklstDelitosRegistrados.DataSource = Enum.GetValues(typeof(ETipoCausaIngreso));
-
+            dtpFechaIngreso.Enabled = false;
+            dtpFechaIngreso.Value = DateTime.Now;
             errorEnCampo = new ErrorProvider();
         }
 
@@ -92,7 +93,6 @@ namespace TP3.UsuarioABM
             this.ValidarVacio(txtDni.Text.Trim(), "txtDni");
             this.ValidarVacio(txtNumeroDeDenuncias.Text.Trim(), "txtNumeroDeDenuncias");
             this.ValidarVacio(txtTelefono.Text.Trim(), "txtTelefono");
-            this.ValidarVacio(txtFechaIngreso.Text.Trim(), "txtFechaIngreso");
             this.ValidarVacio(txtNumeroDeDenuncias.Text.Trim(), "txtNumeroDeDenuncias");
 
             // Se validan valores de cada campo

@@ -36,12 +36,10 @@ namespace TP3.UsuarioABM
             switch (tipoPersona)
             {
                 case ETipoPersona.Administrador:
-                    this.fuenteDeInformacion .AddRange(Asociacion.ListaEmpleados);
-                    this.fuenteDeInformacion.FiltrarPorTipoEmpleado<Administrador,Persona>();
+                    this.fuenteDeInformacion.AddRange(Asociacion.ListaEmpleados.FiltrarPorTipoEmpleado<Administrador, Empleado>());
                     break;
                 case ETipoPersona.Empleado:
-                    this.fuenteDeInformacion.AddRange(Asociacion.ListaEmpleados);
-                    this.fuenteDeInformacion.FiltrarPorTipoEmpleado<Empleado,Persona>();
+                    this.fuenteDeInformacion.AddRange(Asociacion.ListaEmpleados.FiltrarPorTipoEmpleado<Empleado, Empleado>());
                     break;
                 case ETipoPersona.Usuario:
                     this.fuenteDeInformacion.AddRange(Asociacion.ListaUsuarios);
@@ -82,6 +80,7 @@ namespace TP3.UsuarioABM
             FrmAltaUsuario frmAltaUsuario = new FrmAltaUsuario();
             frmAltaUsuario.ShowDialog();
             this.Show();
+            this.CargarDatosSinFiltro((ETipoPersona)cmbTipoPersona.SelectedItem);
         }
 
         private void cmbTipoPersona_SelectedValueChanged(object sender, EventArgs e)

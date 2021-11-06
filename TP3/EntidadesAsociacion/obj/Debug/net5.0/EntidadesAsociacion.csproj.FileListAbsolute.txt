@@ -22,3 +22,17 @@ C:\Users\EGY96\OneDrive\Escritorio\Nueva carpeta (2)\EntidadesAsociacion\obj\Deb
 C:\Users\EGY96\OneDrive\Escritorio\Nueva carpeta (2)\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.dll
 C:\Users\EGY96\OneDrive\Escritorio\Nueva carpeta (2)\EntidadesAsociacion\obj\Debug\net5.0\ref\EntidadesAsociacion.dll
 C:\Users\EGY96\OneDrive\Escritorio\Nueva carpeta (2)\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.pdb
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\bin\Debug\net5.0\EntidadesAsociacion.deps.json
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\bin\Debug\net5.0\EntidadesAsociacion.dll
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\bin\Debug\net5.0\ref\EntidadesAsociacion.dll
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\bin\Debug\net5.0\EntidadesAsociacion.pdb
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.csproj.AssemblyReference.cache
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.AssemblyInfoInputs.cache
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.AssemblyInfo.cs
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.csproj.CoreCompileInputs.cache
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.dll
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\ref\EntidadesAsociacion.dll
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\obj\Debug\net5.0\EntidadesAsociacion.pdb
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\bin\Debug\net5.0\Archivos_Serializacion\ArchivosLectura\Asistencias.json
+C:\Users\Evelyn\Desktop\PreubaTP\TP3\EntidadesAsociacion\bin\Debug\net5.0\Archivos_Serializacion\ArchivosLectura\Asistencias.xml

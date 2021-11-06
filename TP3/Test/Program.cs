@@ -25,9 +25,9 @@ namespace Test
             // Se agregan dos asistencias asistencias (La tercer asistencia no deberia agergarse dado que ya hay una asistencia cargada para esa fecha y ese usuario)
             Usuario primerUsuario = Asociacion.ListaUsuarios[0];
             Usuario segundoUsuario = Asociacion.ListaUsuarios[1];
-            Asistencia primerAsistencia = new Asistencia(primerUsuario, Convert.ToDateTime("05/11/2021"), EGrupo.Viernes, ETipoAsistencia.P);
-            Asistencia segundaAsistencia = new Asistencia(segundoUsuario, Convert.ToDateTime("26/10/2021"), EGrupo.Martes, ETipoAsistencia.AA);
-            Asistencia tercerAsistencia = new Asistencia(segundoUsuario, Convert.ToDateTime("26/10/2021"), EGrupo.Martes, ETipoAsistencia.F);
+            Asistencia primerAsistencia = new Asistencia(primerUsuario, Convert.ToDateTime("05/11/2021"), EGrupo.Viernes, ETipoAsistencia.Presente);
+            Asistencia segundaAsistencia = new Asistencia(segundoUsuario, Convert.ToDateTime("26/10/2021"), EGrupo.Martes, ETipoAsistencia.AusenteConAviso);
+            Asistencia tercerAsistencia = new Asistencia(segundoUsuario, Convert.ToDateTime("26/10/2021"), EGrupo.Martes, ETipoAsistencia.Feriado);
 
             AsistenciaControlador.AgregarAsistencia(primerAsistencia);
             AsistenciaControlador.AgregarAsistencia(segundaAsistencia);
@@ -36,7 +36,7 @@ namespace Test
             Console.WriteLine($"\n{"".PadLeft(50, '=')}");
 
             // Se edita la asistencia agregada
-            Asistencia asistenciaAEditar = new Asistencia(primerUsuario, Convert.ToDateTime("05/11/2021"), EGrupo.Viernes, ETipoAsistencia.AA);
+            Asistencia asistenciaAEditar = new Asistencia(primerUsuario, Convert.ToDateTime("05/11/2021"), EGrupo.Viernes, ETipoAsistencia.AusenteConAviso);
             AsistenciaControlador.EditarAsistencia(asistenciaAEditar);
             Console.WriteLine(Asociacion.ListadoAsistencias.Mostar());
             Console.WriteLine($"\n{"".PadLeft(50, '=')}");
@@ -45,16 +45,16 @@ namespace Test
             Console.ReadKey();
             Console.Clear();
 
-            // Se leen asistencias del archivo XML (Si contiene asistencias previamente cargadas no se leeran)
+            string pathArchivosLetura = AppDomain.CurrentDomain.BaseDirectory;
+            pathArchivosLetura += $"\\Archivos_Serializacion\\ArchivosLectura";
+            // Se leen asistencias del archivo Json (Si contiene asistencias previamente cargadas no se leeran)
 
-            string pathJson = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            ArchivosYSerializacionControlador.ImportarAsistenciasJsonXML(ETipoExtension.Json, "Asistencias", pathJson);
+            ArchivosYSerializacionControlador.ImportarAsistenciasJsonXML(ETipoExtension.Json, "Asistencias", pathArchivosLetura);
             Console.WriteLine(Asociacion.ListadoAsistencias.Mostar());
             Console.WriteLine($"\n{"".PadLeft(50, '=')}");
 
-            // Se leen asistencias del archivo Json (Si contiene asistencias previamente cargadas no se leeran)
-            string pathXml = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            ArchivosYSerializacionControlador.ImportarAsistenciasJsonXML(ETipoExtension.Xml, "Asistencias", pathXml);
+            // Se leen asistencias del archivo Xml (Si contiene asistencias previamente cargadas no se leeran)
+            ArchivosYSerializacionControlador.ImportarAsistenciasJsonXML(ETipoExtension.Xml, "Asistencias", pathArchivosLetura);
             Console.WriteLine(Asociacion.ListadoAsistencias.Mostar());
             Console.WriteLine($"\n{"".PadLeft(50, '=')}");
 
@@ -64,7 +64,6 @@ namespace Test
             Console.Clear();
 
             // Se comparan los datos y genera reportes
-            Reporte<Asistencia> reporte = new Reporte<Asistencia>();
             string fechaDesde = "01/11/2021";
             string fechaHasta = "08/11/2021";
 
@@ -120,7 +119,7 @@ namespace Test
 
             Console.WriteLine(@$"RUTA DE LOS ARCHIVOS: {pathEscritorio}\Reportes\");
 
-
+            //AppDomain.CurrentDomain.BaseDirectory;
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.ReadKey();
             Console.Clear();
@@ -140,7 +139,7 @@ namespace Test
             Console.WriteLine($"\n{"".PadLeft(50, '=')}");
             Console.WriteLine($"Usuarios que ejercieron Violencia Domestica\n\n");
             List<Usuario> usuarioFiltradoCausaDeIngreso = UsuarioControlador.FiltrarCausaDeIngreso(new List<ETipoCausaIngreso>() { ETipoCausaIngreso.ViolenciaDomestica}, Asociacion.ListaUsuarios);
-            Console.WriteLine(usuariosFiltradoCantidadDenuncas.Mostar());
+            Console.WriteLine(usuarioFiltradoCausaDeIngreso.Mostar());
 
         }
     }

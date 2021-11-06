@@ -1,28 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Test\\Test.csproj": {}
+    "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\EntidadesAsociacion\\EntidadesAsociacion.csproj": {
+    "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\EntidadesAsociacion\\EntidadesAsociacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\EntidadesAsociacion\\EntidadesAsociacion.csproj",
+        "projectUniqueName": "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\EntidadesAsociacion\\EntidadesAsociacion.csproj",
         "projectName": "EntidadesAsociacion",
-        "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\EntidadesAsociacion\\EntidadesAsociacion.csproj",
-        "packagesPath": "C:\\Users\\EGY96\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\EntidadesAsociacion\\obj\\",
+        "projectPath": "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\EntidadesAsociacion\\EntidadesAsociacion.csproj",
+        "packagesPath": "C:\\Users\\Evelyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\EntidadesAsociacion\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\EGY96\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Evelyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
@@ -54,36 +57,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "E:\\Aplicaciones\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Test\\Test.csproj": {
+    "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Test\\Test.csproj",
-        "packagesPath": "C:\\Users\\EGY96\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Test\\obj\\",
+        "projectPath": "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\Evelyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\Test\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\EGY96\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Evelyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\EntidadesAsociacion\\EntidadesAsociacion.csproj": {
-                "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Nueva carpeta (2)\\EntidadesAsociacion\\EntidadesAsociacion.csproj"
+              "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\EntidadesAsociacion\\EntidadesAsociacion.csproj": {
+                "projectPath": "C:\\Users\\Evelyn\\Desktop\\PreubaTP\\TP3\\EntidadesAsociacion\\EntidadesAsociacion.csproj"
               }
             }
           }
@@ -112,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "E:\\Aplicaciones\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
